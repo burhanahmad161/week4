@@ -1,0 +1,28 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+void  true(int,int);
+void  false(int,int);
+main()
+{
+system("cls");     
+cout<<"enter a number:";
+cin>>a;
+cout<<"enter a number:";
+cin>>b;
+  
+}
+void  true(int,int)
+{
+ if(a==b)
+	{
+	  cout<<"true";
+	}
+}
+void  false(int,int)
+{
+if(a!=b)
+	{
+	  cout<<"false"
+	}
+}

@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+void totalPrice(int);
+main()
+{
+int roses,white,tulips;
+cout<<"enter number of red roses";
+cin>>roses;
+cout<<"enter number of white roses";
+cin>>white;
+cout<<"enter number of tulips";
+cin>>tulips;
+totalPrice(price);
+if(price>200)
+
+	{
+	 price=price*20/100;
+	}
+}
+void totalPrice(int)
+{
+ price=(roses*20)+(white*4.10)+(tulips*2.50);
+ cout<<"price is:"<<price;
+}

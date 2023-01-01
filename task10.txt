@@ -1,0 +1,63 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+void pak(int,int);
+void ire(int,int);
+void ind(int,int);
+void eng(int,int);
+void can(int,int);
+main()
+{
+system("cls");     
+int price;
+char country;
+cout<<"country name:";
+cin>>country;
+cout<<"enter price:";
+cin>>price;
+ pak();
+  ire();
+  ind();	
+   eng();
+   can();
+}
+void pak(int,int)
+{
+  if(country==Pakistan)
+   {
+     price=price*5/100;
+     cout<<"final prrce is:"<<price; 
+   }
+}
+void ire(int,int)
+{
+  if(country==Ireland)
+   {
+     price=price*10/100;
+     cout<<"final prrce is:"<<price; 
+   }
+}
+void ind(int,int)
+{
+  if(country=="India")
+   {
+     price=price*20/100;
+     cout<<"final prrce is:"<<price; 
+   }
+}
+void eng(int,int)
+{
+  if(country=="England")
+   {
+     price=price*30/100;
+     cout<<"final prrce is:"<<price; 
+   }
+}
+void can(int,int)
+{
+  if(country=="Canada")
+   {
+     price=price*45/100;
+     cout<<"final prrce is:"<<price; 
+   }
+}

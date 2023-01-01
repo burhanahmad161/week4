@@ -1,0 +1,68 @@
+#include<iostream>
+#include<windows.h>
+using namespace std;
+void gotoxy(int,int);
+void a(int,int);
+void w(int,int);
+void a(int,int);
+void i(int,int);
+void s(int,int);
+
+main()
+{
+system("cls");     
+gotoxy(9,5);
+a();
+w();
+a();
+i();
+s();
+}
+void gotoxy(int x,int y)
+{
+COORD coordinates;
+coordinates.X=x;
+coordinates.Y=y;
+SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coordinates);
+}
+void a(int,int)
+{
+cout<<"     # ";
+cout<<"   ## ##";
+cout<<" ###   ###";
+cout<<"###     ###";
+cout<<"###     ### ";
+cout<<"###########";
+cout<<"###     ### ";
+cout<<"###     ### ";
+cout<<"###     ### ";
+cout<<"###     ### ";
+cout<<"###     ### ";
+}
+void w(int,int)
+{
+cout<<"###             ###";
+cout<<"###             ###";
+cout<<"###             ### ";
+cout<<"###             ###";
+cout<<"###             ### ";
+cout<<"###     ##      ###";   
+cout<<"###    ## ##    ###";
+cout<<"###   ##   ##   ###";
+cout<<"###  ##     ##  ###";
+cout<<"### ##       ## ###";
+cout<<"###             ####";
+}
+void i(int,int)
+{
+cout<<"###            ";
+cout<<"###             ";
+cout<<"###              ";
+cout<<"###             ";
+cout<<"###";   
+cout<<"###";
+cout<<"###";
+cout<<"###";
+cout<<"###";
+cout<<"###";
+}

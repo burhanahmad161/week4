@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void tomresult(int num);
+main()
+{
+int holidays;
+cout<<"enter number of holidays";
+cin>>holidays;
+tomresult(num);
+}
+void tomresult(int num)
+{
+int work_days=365-num;
+int time_games=(work_days*63)+(num*127);
+int differ_norm=30000-time_games;
+float differ_in_min=differ_norm*0.16666667;
+cout<<"tom sleep well'<<differ_in_min<<"hours"<<endl;
+cout<<"tom will play"<<timegames<<endl;
+
+}	
